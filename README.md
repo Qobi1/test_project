@@ -39,19 +39,15 @@ source venv/bin/activate  # or venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Edit **`settings.py`** for PostgreSQL:
+Create a `.env` file at the project root with your PostgreSQL credentials (no need to edit `settings.py`; it already loads these via `python-dotenv`):
 
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'auth_system',
-        'USER': 'postgres',
-        'PASSWORD': 'yourpassword',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+```bash
+# .env
+DB_NAME=auth_system
+DB_USER=postgres
+DB_PASSWORD=yourpassword
+DB_HOST=localhost
+DB_PORT=5432
 ```
 
 Run migrations and start the server:

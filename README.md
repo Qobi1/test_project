@@ -32,8 +32,8 @@ It demonstrates how to build a full authentication flow and a **role-based acces
 ## ⚙️ Installation
 
 ```bash
-git clone <repo-url>
-cd <project-folder>
+git clone https://github.com/Qobi1/test_project.git
+cd test_project
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate
 pip install -r requirements.txt
